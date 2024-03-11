@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+.home{
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    min-height: 100vh;
+    align-items: center;
+    padding : 1rem;
+}
+.home .hcontent{
+    flex: 1 1 40rem;
+    padding-top: 1rem;
+    padding-left: 4rem;
+}
+.home .himage{
+    flex: 1 1 40rem;
+    z-index: -1;
+}
+.home .himage img{
+    width: 90%;
+    animation: float 3s linear infinite;
+}
+@keyframes float{
+    0%,100%{
+        transform: translateX(0rem);
+    }
+    50%{
+        transform: translateX(3rem);
+    }
+}
+
+.home .hcontent h5{
+    font-size: 4rem;
+    color: rgb(2, 4, 125);
+    overflow: hidden;
+    float: initial;
+}
+.home .hcontent p{
+    font-size: 1.2rem;
+}
+.hbtn{
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    border: 0.1rem solid black;
+    cursor: pointer;
+    font-size: 1rem;
+    background-repeat: 0.5rem;
+    position: relative;
+    color: black;
+    font-weight: 800;
+
+    z-index: -1;
+}
